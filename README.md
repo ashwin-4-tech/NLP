@@ -1,5 +1,3 @@
-# NLP
-Natural Language Processing
 
 ### Task 1: Conceptual Understanding
 
