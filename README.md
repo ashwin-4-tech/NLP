@@ -40,3 +40,23 @@ Machine Learning models require numbers, not text. We use:
 
 ### Step 5: Model Training & Evaluation (Next Step)
 We will train multiple models (Logistic Regression, Naive Bayes, etc.) and compare them using metrics like **Accuracy**, **Precision**, and **F1-Score**.
+
+# Conversational AI with DialoGPT: Memory & Optimization
+
+A Python-based conversational agent built using the Hugging Face Transformers library and PyTorch. This project demonstrates how to implement an LLM with persistent conversational memory and optimized generation parameters to reduce model hallucination and repetition.
+
+## 🚀 Key Features
+* **Model:** Utilizes `microsoft/DialoGPT-medium` for a balance between conversational intelligence and local performance.
+* **Conversational Memory:** Implements stateful history tracking using PyTorch tensors, allowing the bot to maintain context across multiple exchanges.
+* **Optimized Inference:** * **Repetition Penalty:** Prevents the model from getting stuck in word loops.
+    * **Attention Masks:** Ensures high-quality responses by explicitly defining the context window.
+    * **Nucleus Sampling (Top-p):** Balances creativity and coherence.
+
+## 🛠️ Technical Stack
+* **Python 3.8+**
+* **PyTorch** (Math & Tensor operations)
+* **Hugging Face Transformers** (Model architecture & Tokenization)
+
+## 📦 Installation
+```bash
+pip install torch transformers
